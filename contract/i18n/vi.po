@@ -3,14 +3,14 @@
 # * contract
 #
 # Translators:
-# OCA Transbot <transbot@odoo-community.org>, 2017
+# Nguyen Tien Chinh <chinh.nt2211@gmail.com>, 2026
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-21 18:22+0000\n"
 "PO-Revision-Date: 2017-11-21 18:22+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
+"Last-Translator: Nguyen Tien Chinh <chinh.nt2211@gmail.com>, 2026\n"
 "Language-Team: Vietnamese (https://www.transifex.com/oca/teams/23907/vi/)\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
@@ -106,6 +106,10 @@ msgid ""
 "you.</p>\n"
 "        "
 msgstr ""
+"<p>Xin chào</p>\n"
+"            <p>Chúng tôi có một số điều chỉnh trong hợp đồng mà chúng tôi muốn thông báo "
+"you.</p>\n"
+"        "
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_manually_create_invoice_form_view
@@ -118,11 +122,18 @@ msgid ""
 "                                contracts to invoice\n"
 "                            </span>"
 msgstr ""
+"<span invisible=\"contract_to_invoice_count &gt; 1\">\n"
+"                                từ hợp đồng đến hóa đơn\n"
+"                            </span>\n"
+"                            <span invisible=\"contract_to_invoice_count &lt;"
+"= 1\">\n"
+"                                từ hợp đồng đến hóa đơn\n"
+"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong class=\"mr16\">Subtotal</strong>"
-msgstr ""
+msgstr "<strong class=\"mr16\">Tổng phụ</strong>"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
@@ -133,11 +144,16 @@ msgid ""
 "                                    the\n"
 "                                    invoiced period"
 msgstr ""
+"<strong>#END#</strong>\n"
+"                                    : Ngày kết thúc\n"
+"                                    của\n"
+"                                    kỳ\n"
+"                                    lập hóa đơn"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "<strong>#END#</strong>: End date of the invoiced period"
-msgstr ""
+msgstr "<strong>#END#</strong>: Ngày kết thúc của kỳ lập hóa đơn"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
@@ -148,6 +164,11 @@ msgid ""
 "                                    the\n"
 "                                    invoiced period"
 msgstr ""
+"<strong>#INVOICEMONTHNAME#</strong>\n"
+"                                    : Tên hóa đơn tháng\n"
+"                                    của\n"
+"                                    kỳ\n"
+"                                    lập hóa đơn"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
@@ -155,6 +176,8 @@ msgid ""
 "<strong>#INVOICEMONTHNAME#</strong>: Invoice month name of the invoiced "
 "period"
 msgstr ""
+"<strong>#INVOICEMONTHNAME#</strong>: Tên hóa đơn tháng của kỳ lập hóa đơn "
+"period"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
@@ -165,6 +188,11 @@ msgid ""
 "                                    of the\n"
 "                                    invoiced period"
 msgstr ""
+"<strong>#START#</strong>\n"
+"                                    : Ngày bắt đầu\n"
+"                                    của\n"
+"                                    kỳ\n"
+"                                    lập hóa đơn"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
@@ -172,206 +200,208 @@ msgid ""
 "<strong>#START#</strong>: Start date of the\n"
 "                                        invoiced period"
 msgstr ""
+"<strong>#START#</strong>: Ngày bắt đầu của\n"
+"                                        kỳ lập hóa đơn"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Contract: </strong>"
-msgstr ""
+msgstr "<strong>Hợp đồng: </strong>"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "<strong>Customer:</strong>"
-msgstr ""
+msgstr "<strong>Khách hàng:</strong>"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Date Start</strong>"
-msgstr ""
+msgstr "<strong>Ngày bắt đầu</strong>"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "<strong>Date end</strong>"
-msgstr ""
+msgstr "<strong>Ngày kết thúc</strong>"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "<strong>Date of Next Invoice</strong>"
-msgstr ""
+msgstr "<strong>Ngày lập hóa đơn tiếp theo</strong>"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Description</strong>"
-msgstr ""
+msgstr "<strong>Mô tả</strong>"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Modifications</strong>"
-msgstr ""
+msgstr "<strong>Các điều chỉnh</strong>"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Notes: </strong>"
-msgstr ""
+msgstr "<strong>Ghi chú: </strong>"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Partner:</strong>"
-msgstr ""
+msgstr "<strong>Đối tác:</strong>"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Price</strong>"
-msgstr ""
+msgstr "<strong>Giá</strong>"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Quantity</strong>"
-msgstr ""
+msgstr "<strong>Số lượng</strong>"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Recurring Items</strong>"
-msgstr ""
+msgstr "<strong>Các hạng mục định kỳ</strong>"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "<strong>Reference</strong>"
-msgstr ""
+msgstr "<strong>Tham chiếu</strong>"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Responsible: </strong>"
-msgstr ""
+msgstr "<strong>Người phụ trách: </strong>"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "<strong>Responsible:</strong>"
-msgstr ""
+msgstr "<strong>Người phụ trách:</strong>"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Total</strong>"
-msgstr ""
+msgstr "<strong>Tổng cộng</strong>"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "<strong>Unit Price</strong>"
-msgstr ""
+msgstr "<strong>Đơn giá</strong>"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__access_warning
 msgid "Access warning"
-msgstr ""
+msgstr "Cảnh báo truy cập"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "Cần hành động"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__active
 #: model:ir.model.fields,field_description:contract.field_contract_line__active
 msgid "Active"
-msgstr ""
+msgstr "Đang hoạt động"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__activity_ids
 msgid "Activities"
-msgstr ""
+msgstr "Hoạt động"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "Cảnh báo hoạt động"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__activity_state
 msgid "Activity State"
-msgstr ""
+msgstr "Trạng thái hoạt động"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__activity_type_icon
 msgid "Activity Type Icon"
-msgstr ""
+msgstr "Biểu tượng loại hoạt động"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "Add a line"
-msgstr ""
+msgstr "Thêm hạng mục"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "Add a note"
-msgstr ""
+msgstr "Thêm ghi chú"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "Add a section"
-msgstr ""
+msgstr "Thêm mục"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__analytic_distribution
 msgid "Analytic Distribution"
-msgstr ""
+msgstr "Phân bổ phân tích"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__analytic_precision
 msgid "Analytic Precision"
-msgstr ""
+msgstr "Độ chính xác phân tích"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract_line.py:0
 msgid "April"
-msgstr ""
+msgstr "Tháng Tư"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 msgid "Archived"
-msgstr ""
+msgstr "Đã lưu trữ"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 msgid "Associated Partner"
-msgstr ""
+msgstr "Đối tác liên quan"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "Số lượng tệp đính kèm"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract_line.py:0
 msgid "August"
-msgstr ""
+msgstr "Tháng Tám"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__automatic_price
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__automatic_price
 msgid "Auto-price?"
-msgstr ""
+msgstr "Tự động tính giá?"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_manually_create_invoice_form_view
 msgid "Cancel"
-msgstr ""
+msgstr "Hủy"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__is_canceled
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__is_canceled
 msgid "Canceled"
-msgstr ""
+msgstr "Đã hủy"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__product_uom_category_id
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__product_uom_category_id
 msgid "Category"
-msgstr ""
+msgstr "Danh mục"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__line_recurrence
@@ -379,34 +409,34 @@ msgstr ""
 msgid ""
 "Check this if you want to control recurrence at the line level instead of "
 "for the whole contract."
-msgstr ""
+msgstr "Chọn mục này nếu bạn muốn kiểm soát việc lặp lại ở cấp độ hạng mục thay vì toàn bộ hợp đồng."
 
 #. module: contract
 #: model_terms:ir.actions.act_window,help:contract.contract_template_action
 msgid "Click to create a new contract template."
-msgstr ""
+msgstr "Nhấn để tạo mẫu hợp đồng mới."
 
 #. module: contract
 #: model_terms:ir.actions.act_window,help:contract.action_customer_contract
 #: model_terms:ir.actions.act_window,help:contract.action_supplier_contract
 msgid "Click to create a new contract."
-msgstr ""
+msgstr "Nhấn để tạo hợp đồng mới."
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_tag__color
 msgid "Color Index"
-msgstr ""
+msgstr "Chỉ số màu"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__commercial_partner_id
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 msgid "Commercial Entity"
-msgstr ""
+msgstr "Đơn vị thương mại"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "Communication"
-msgstr ""
+msgstr "Trao đổi"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__company_id
@@ -415,19 +445,19 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract.field_contract_template__company_id
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__company_id
 msgid "Company"
-msgstr ""
+msgstr "Công ty"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract.py:0
 msgid "Compose Email"
-msgstr ""
+msgstr "Soạn email"
 
 #. module: contract
 #: model:ir.model,name:contract.model_res_partner
 #: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "Contact"
-msgstr ""
+msgstr "Liên hệ"
 
 #. module: contract
 #: model:ir.actions.report,name:contract.report_contract
@@ -439,98 +469,98 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:contract.contract_line_search_view
 #: model_terms:ir.ui.view,arch_db:contract.res_config_settings_form_view
 msgid "Contract"
-msgstr ""
+msgstr "Hợp đồng"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.portal_my_contracts
 msgid "Contract #"
-msgstr ""
+msgstr "Hợp đồng #"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "Contract -"
-msgstr ""
+msgstr "Hợp đồng -"
 
 #. module: contract
 #: model:ir.model,name:contract.model_contract_line
 #: model:ir.model.fields,field_description:contract.field_account_move_line__contract_line_id
 msgid "Contract Line"
-msgstr ""
+msgstr "Hạng mục"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_manually_create_invoice_form_view
 msgid "Contract Manually Create Invoice"
-msgstr ""
+msgstr "Tạo hóa đơn hợp đồng thủ công"
 
 #. module: contract
 #: model:ir.model,name:contract.model_contract_manually_create_invoice
 msgid "Contract Manually Create Invoice Wizard"
-msgstr ""
+msgstr "Trình hướng dẫn tạo hóa đơn hợp đồng thủ công"
 
 #. module: contract
 #: model:ir.model,name:contract.model_contract_modification
 msgid "Contract Modification"
-msgstr ""
+msgstr "Điều chỉnh hợp đồng"
 
 #. module: contract
 #: model:mail.template,name:contract.mail_template_contract_modification
 msgid "Contract Modification Template"
-msgstr ""
+msgstr "Mẫu điều chỉnh hợp đồng"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "Contract Name"
-msgstr ""
+msgstr "Tên hợp đồng"
 
 #. module: contract
 #: model:ir.model,name:contract.model_contract_recurring_mixin
 msgid "Contract Recurring Mixin"
-msgstr ""
+msgstr "Cấu trúc hợp đồng định kỳ"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_line_form_view
 msgid "Contract Start & End Dates"
-msgstr ""
+msgstr "Ngày bắt đầu & kết thúc hợp đồng"
 
 #. module: contract
 #: model:ir.model,name:contract.model_contract_tag
 #: model:ir.ui.menu,name:contract.contract_tag_menu
 msgid "Contract Tag"
-msgstr ""
+msgstr "Thẻ hợp đồng"
 
 #. module: contract
 #: model:ir.actions.act_window,name:contract.contract_tag_act_window
 msgid "Contract Tags"
-msgstr ""
+msgstr "Các thẻ hợp đồng"
 
 #. module: contract
 #: model:ir.model,name:contract.model_contract_template
 #: model:ir.model.fields,field_description:contract.field_contract_contract__contract_template_id
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "Contract Template"
-msgstr ""
+msgstr "Mẫu hợp đồng"
 
 #. module: contract
 #: model:ir.model,name:contract.model_contract_template_line
 msgid "Contract Template Line"
-msgstr ""
+msgstr "Hạng mục mẫu hợp đồng"
 
 #. module: contract
 #: model:ir.actions.act_window,name:contract.contract_template_action
 #: model:ir.ui.menu,name:contract.contract_template_menu
 msgid "Contract Templates"
-msgstr ""
+msgstr "Các mẫu hợp đồng"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_manually_create_invoice__contract_to_invoice_ids
 msgid "Contract To Invoice"
-msgstr ""
+msgstr "Hợp đồng cần lập hóa đơn"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_manually_create_invoice__contract_to_invoice_count
 msgid "Contract To Invoice Count"
-msgstr ""
+msgstr "Số hợp đồng cần lập hóa đơn"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__contract_type
@@ -538,7 +568,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract.field_contract_template__contract_type
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_search_view
 msgid "Contract Type"
-msgstr ""
+msgstr "Loại hợp đồng"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__date_start
@@ -547,45 +577,45 @@ msgstr ""
 #: model:ir.model.fields,help:contract.field_contract_template__date_start
 #: model:ir.model.fields,help:contract.field_contract_template_line__date_start
 msgid "Contract activation date (first recurrence starts here)"
-msgstr ""
+msgstr "Ngày kích hoạt hợp đồng (chu kỳ đầu tiên bắt đầu từ đây)"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract_line.py:0
 msgid "Contract line '%s' start date can't be later than end date"
-msgstr ""
+msgstr "Ngày bắt đầu của hạng mục hợp đồng '%s' không được sau ngày kết thúc"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__contract_line_ids
 msgid "Contract lines"
-msgstr ""
+msgstr "Các hạng mục hợp đồng"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__contract_line_fixed_ids
 msgid "Contract lines (fixed)"
-msgstr ""
+msgstr "Các hạng mục hợp đồng (cố định)"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract.py:0
 msgid "Contract manually invoiced: %(invoice_link)s"
-msgstr ""
+msgstr "Hợp đồng đã được lập hóa đơn thủ công: %(invoice_link)s"
 
 #. module: contract
 #: model:mail.message.subtype,name:contract.mail_message_subtype_contract_modification
 msgid "Contract modifications"
-msgstr ""
+msgstr "Các điều chỉnh hợp đồng"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract.py:0
 msgid "Contract start"
-msgstr ""
+msgstr "Bắt đầu hợp đồng"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_template__contract_line_ids
 msgid "Contract template lines"
-msgstr ""
+msgstr "Các hạng mục mẫu hợp đồng"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_res_partner__contract_ids
@@ -596,13 +626,13 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:contract.portal_my_home_contract
 #: model_terms:ir.ui.view,arch_db:contract.portal_my_home_menu_contract
 msgid "Contracts"
-msgstr ""
+msgstr "Hợp đồng"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/wizards/contract_manually_create_invoice.py:0
 msgid "Contracts to invoice"
-msgstr ""
+msgstr "Các hợp đồng cần lập hóa đơn"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_line__product_uom_category_id
@@ -611,23 +641,25 @@ msgid ""
 "Conversion between Units of Measure can only occur if they belong to the "
 "same category. The conversion will be made based on the ratios."
 msgstr ""
+"Việc chuyển đổi giữa các đơn vị đo chỉ có thể thực hiện nếu chúng thuộc cùng "
+"một danh mục. Việc chuyển đổi sẽ dựa trên các tỷ lệ."
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__create_invoice_visibility
 #: model:ir.model.fields,field_description:contract.field_contract_line__create_invoice_visibility
 msgid "Create Invoice Visibility"
-msgstr ""
+msgstr "Hiển thị tạo hóa đơn"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_manually_create_invoice_form_view
 #, fuzzy
 msgid "Create Invoices"
-msgstr "Tạo trên"
+msgstr "Tạo hóa đơn"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Create invoices"
-msgstr ""
+msgstr "Tạo hóa đơn"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__create_uid
@@ -638,7 +670,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract.field_contract_template__create_uid
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Được tạo bởi"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__create_date
@@ -656,13 +688,13 @@ msgstr "Tạo trên"
 #: model:ir.model.fields,field_description:contract.field_contract_line__currency_id
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__currency_id
 msgid "Currency"
-msgstr ""
+msgstr "Tiền tệ"
 
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_line__note_invoicing_mode__custom
 #: model:ir.model.fields.selection,name:contract.selection__contract_template_line__note_invoicing_mode__custom
 msgid "Custom"
-msgstr ""
+msgstr "Tùy chỉnh"
 
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_contract__contract_type__sale
@@ -670,28 +702,28 @@ msgstr ""
 #: model:ir.model.fields.selection,name:contract.selection__contract_template__contract_type__sale
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_customer_form_view
 msgid "Customer"
-msgstr ""
+msgstr "Khách hàng"
 
 #. module: contract
 #: model:ir.actions.act_window,name:contract.action_customer_contract_lines
 msgid "Customer Contract Lines"
-msgstr ""
+msgstr "Các hạng mục hợp đồng khách hàng"
 
 #. module: contract
 #: model:ir.ui.menu,name:contract.menu_customer_contract_line_report
 msgid "Customer Contract lines"
-msgstr ""
+msgstr "Các hạng mục hợp đồng khách hàng"
 
 #. module: contract
 #: model:ir.actions.act_window,name:contract.action_customer_contract
 #: model:ir.ui.menu,name:contract.menu_contract_contract_customer
 msgid "Customer Contracts"
-msgstr ""
+msgstr "Hợp đồng khách hàng"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__access_url
 msgid "Customer Portal URL"
-msgstr ""
+msgstr "URL Cổng thông tin khách hàng"
 
 #. module: contract
 #. odoo-python
@@ -701,7 +733,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 #: model_terms:ir.ui.view,arch_db:contract.template_contract_modification
 msgid "Date"
-msgstr ""
+msgstr "Ngày"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__date_end
@@ -711,7 +743,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__date_end
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 msgid "Date End"
-msgstr ""
+msgstr "Ngày kết thúc"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__date_start
@@ -720,12 +752,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract.field_contract_template__date_start
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__date_start
 msgid "Date Start"
-msgstr ""
+msgstr "Ngày bắt đầu"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.portal_my_contracts
 msgid "Date end"
-msgstr ""
+msgstr "Ngày kết thúc"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__recurring_next_date
@@ -734,12 +766,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract.field_contract_template__recurring_next_date
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__recurring_next_date
 msgid "Date of Next Invoice"
-msgstr ""
+msgstr "Ngày lập hóa đơn tiếp theo"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "Date of next invoice"
-msgstr ""
+msgstr "Ngày lập hóa đơn tiếp theo"
 
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_contract__recurring_rule_type__daily
@@ -748,25 +780,25 @@ msgstr ""
 #: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_rule_type__daily
 #: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_rule_type__daily
 msgid "Day(s)"
-msgstr ""
+msgstr "Ngày"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract_line.py:0
 msgid "December"
-msgstr ""
+msgstr "Tháng Mười Hai"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_line__sequence
 #: model:ir.model.fields,help:contract.field_contract_template_line__sequence
 msgid "Defines line ordering in the contract."
-msgstr ""
+msgstr "Xác định thứ tự sắp xếp các hạng mục trong hợp đồng."
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__generation_type
 #: model:ir.model.fields,help:contract.field_contract_template__generation_type
 msgid "Defines what document is automatically generated by the cron."
-msgstr ""
+msgstr "Xác định loại tài liệu được định kỳ tự động tạo."
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__name
@@ -777,26 +809,26 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 #: model_terms:ir.ui.view,arch_db:contract.template_contract_modification
 msgid "Description"
-msgstr ""
+msgstr "Mô tả"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__discount
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__discount
 #: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "Discount (%)"
-msgstr ""
+msgstr "Chiết khấu (%)"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract_template_line.py:0
 msgid "Discount should be less or equal to 100"
-msgstr ""
+msgstr "Chiết khấu phải nhỏ hơn hoặc bằng 100"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_line__discount
 #: model:ir.model.fields,help:contract.field_contract_template_line__discount
 msgid "Discount to apply on generated invoices. Must be ≤ 100."
-msgstr ""
+msgstr "Chiết khấu áp dụng cho các hóa đơn được tạo. Phải ≤ 100."
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__display_name
@@ -807,23 +839,23 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract.field_contract_template__display_name
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Tên hiển thị"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__display_type
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__display_type
 msgid "Display Type"
-msgstr ""
+msgstr "Loại hiển thị"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__distribution_analytic_account_ids
 msgid "Distribution Analytic Account"
-msgstr ""
+msgstr "Tài khoản phân tích phân bổ"
 
 #. module: contract
 #: model:mail.template,name:contract.email_contract_template
 msgid "Email Contract Template"
-msgstr ""
+msgstr "Mẫu email hợp đồng"
 
 #. module: contract
 #. odoo-python
@@ -832,64 +864,66 @@ msgid ""
 "Failed to process the contract %(name)s [id: %(id)s]:\n"
 "%(ue)s"
 msgstr ""
+"Xử lý hợp đồng %(name)s [id: %(id)s] thất bại:\n"
+"%(ue)s"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract_line.py:0
 msgid "February"
-msgstr ""
+msgstr "Tháng Hai"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 msgid "Finished"
-msgstr ""
+msgstr "Hoàn tất"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__fiscal_position_id
 msgid "Fiscal Position"
-msgstr ""
+msgstr "Vị trí tài chính"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_follower_ids
 msgid "Followers"
-msgstr ""
+msgstr "Người theo dõi"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Người theo dõi (Đối tác)"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
-msgstr ""
+msgstr "Biểu tượng Font Awesome, ví dụ: fa-tasks"
 
 #. module: contract
 #: model:ir.actions.server,name:contract.contract_cron_for_invoice_ir_actions_server
 msgid "Generate Recurring Invoices from Contracts"
-msgstr ""
+msgstr "Tạo hóa đơn định kỳ từ hợp đồng"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__generation_type
 #: model:ir.model.fields,field_description:contract.field_contract_template__generation_type
 msgid "Generation Type"
-msgstr ""
+msgstr "Loại tạo"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__group_id
 msgid "Group"
-msgstr ""
+msgstr "Nhóm"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 #: model_terms:ir.ui.view,arch_db:contract.contract_line_search_view
 msgid "Group By..."
-msgstr ""
+msgstr "Nhóm theo..."
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__has_message
 msgid "Has Message"
-msgstr ""
+msgstr "Có tin nhắn"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__id
@@ -905,22 +939,22 @@ msgstr "ID"
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__activity_exception_icon
 msgid "Icon"
-msgstr ""
+msgstr "Biểu tượng"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr ""
+msgstr "Biểu tượng để biểu thị hoạt động ngoại lệ."
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "Nếu được chọn, các tin nhắn mới cần bạn chú ý."
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "Nếu được chọn, một số tin nhắn có lỗi gửi."
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_line__automatic_price
@@ -928,28 +962,28 @@ msgstr ""
 msgid ""
 "If checked, the price will be taken from the pricelist. Otherwise, it must "
 "be set manually."
-msgstr ""
+msgstr "Nếu được chọn, giá sẽ lấy từ bảng giá. Nếu không, giá phải được nhập thủ công."
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 msgid "In progress"
-msgstr ""
+msgstr "Đang xử lý"
 
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_contract__generation_type__invoice
 #: model:ir.model.fields.selection,name:contract.selection__contract_template__generation_type__invoice
 msgid "Invoice"
-msgstr ""
+msgstr "Hóa đơn"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__invoice_count
 msgid "Invoice Count"
-msgstr ""
+msgstr "Số lượng hóa đơn"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_manually_create_invoice__invoice_date
 msgid "Invoice Date"
-msgstr ""
+msgstr "Ngày hóa đơn"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__recurring_interval
@@ -958,12 +992,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract.field_contract_template__recurring_interval
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__recurring_interval
 msgid "Invoice Every"
-msgstr ""
+msgstr "Lập hóa đơn mỗi"
 
 #. module: contract
 #: model:mail.message.subtype,name:contract.mail_message_subtype_invoice_created
 msgid "Invoice created"
-msgstr ""
+msgstr "Hóa đơn đã được tạo"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__recurring_interval
@@ -972,24 +1006,24 @@ msgstr ""
 #: model:ir.model.fields,help:contract.field_contract_template__recurring_interval
 #: model:ir.model.fields,help:contract.field_contract_template_line__recurring_interval
 msgid "Invoice every (Days/Week/Month/Year)"
-msgstr ""
+msgstr "Lập hóa đơn mỗi (Ngày/Tuần/Tháng/Năm)"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/wizards/contract_manually_create_invoice.py:0
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Invoices"
-msgstr ""
+msgstr "Hóa đơn"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Invoicing"
-msgstr ""
+msgstr "Lập hóa đơn"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__invoice_partner_id
 msgid "Invoicing contact"
-msgstr ""
+msgstr "Liên hệ lập hóa đơn"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__recurring_invoicing_offset
@@ -998,7 +1032,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract.field_contract_template__recurring_invoicing_offset
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__recurring_invoicing_offset
 msgid "Invoicing offset"
-msgstr ""
+msgstr "Độ trễ lập hóa đơn"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__recurring_invoicing_type
@@ -1007,47 +1041,47 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract.field_contract_template__recurring_invoicing_type
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__recurring_invoicing_type
 msgid "Invoicing type"
-msgstr ""
+msgstr "Loại lập hóa đơn"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "Là người theo dõi"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract_line.py:0
 msgid "January"
-msgstr ""
+msgstr "Tháng Một"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__journal_id
 #: model:ir.model.fields,field_description:contract.field_contract_template__journal_id
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_search_view
 msgid "Journal"
-msgstr ""
+msgstr "Sổ nhật ký"
 
 #. module: contract
 #: model:ir.model,name:contract.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Bút toán"
 
 #. module: contract
 #: model:ir.model,name:contract.model_account_move_line
 msgid "Journal Item"
-msgstr ""
+msgstr "Hạng mục bút toán"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract_line.py:0
 msgid "July"
-msgstr ""
+msgstr "Tháng Bảy"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract_line.py:0
 msgid "June"
-msgstr ""
+msgstr "Tháng Sáu"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__last_date_invoiced
@@ -1056,7 +1090,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract.field_contract_template__last_date_invoiced
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__last_date_invoiced
 msgid "Last Date Invoiced"
-msgstr ""
+msgstr "Ngày lập hóa đơn gần nhất"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__write_uid
@@ -1067,7 +1101,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract.field_contract_template__write_uid
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Cập nhật lần cuối bởi"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__write_date
@@ -1078,63 +1112,63 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract.field_contract_template__write_date
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Cập nhật lần cuối vào"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "Legend (for the markers inside invoice lines description)"
-msgstr ""
+msgstr "Chú giải (cho các ký hiệu trong mô tả hạng mục hóa đơn)"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "Lines"
-msgstr ""
+msgstr "Các hạng mục"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__manual_currency_id
 msgid "Manual Currency"
-msgstr ""
+msgstr "Tiền tệ thủ công"
 
 #. module: contract
 #: model:ir.actions.act_window,name:contract.purchase_contract_manually_create_invoice_act_window
 #: model:ir.ui.menu,name:contract.purchase_contract_manually_create_invoice_menu
 msgid "Manually Invoice Purchase Contracts"
-msgstr ""
+msgstr "Lập hóa đơn thủ công cho hợp đồng mua"
 
 #. module: contract
 #: model:ir.actions.act_window,name:contract.sale_contract_manually_create_invoice_act_window
 #: model:ir.ui.menu,name:contract.sale_contract_manually_create_invoice_menu
 msgid "Manually Invoice Sale Contracts"
-msgstr ""
+msgstr "Lập hóa đơn thủ công cho hợp đồng bán"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract_line.py:0
 msgid "March"
-msgstr ""
+msgstr "Tháng Ba"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract_line.py:0
 msgid "May"
-msgstr ""
+msgstr "Tháng Năm"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "Lỗi gửi tin nhắn"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_ids
 msgid "Messages"
-msgstr ""
+msgstr "Tin nhắn"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__modification_ids
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Modifications"
-msgstr ""
+msgstr "Điều chỉnh"
 
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_contract__recurring_rule_type__monthly
@@ -1143,7 +1177,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_rule_type__monthly
 #: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_rule_type__monthly
 msgid "Month(s)"
-msgstr ""
+msgstr "Tháng"
 
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_contract__recurring_rule_type__monthlylastday
@@ -1152,12 +1186,12 @@ msgstr ""
 #: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_rule_type__monthlylastday
 #: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_rule_type__monthlylastday
 msgid "Month(s) last day"
-msgstr ""
+msgstr "Ngày cuối tháng"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr ""
+msgstr "Hạn hoạt động của tôi"
 
 #. module: contract
 #. odoo-python
@@ -1172,22 +1206,22 @@ msgstr "Tên"
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr ""
+msgstr "Hạn hoạt động tiếp theo"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__activity_summary
 msgid "Next Activity Summary"
-msgstr ""
+msgstr "Tóm tắt hoạt động tiếp theo"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__activity_type_id
 msgid "Next Activity Type"
-msgstr ""
+msgstr "Loại hoạt động tiếp theo"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 msgid "Next Invoice"
-msgstr ""
+msgstr "Hóa đơn tiếp theo"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__next_period_date_end
@@ -1196,7 +1230,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract.field_contract_template__next_period_date_end
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__next_period_date_end
 msgid "Next Period End"
-msgstr ""
+msgstr "Ngày kết thúc kỳ tiếp theo"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__next_period_date_start
@@ -1205,41 +1239,41 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract.field_contract_template__next_period_date_start
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__next_period_date_start
 msgid "Next Period Start"
-msgstr ""
+msgstr "Ngày bắt đầu kỳ tiếp theo"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_line_form_view
 msgid "Next period to invoice"
-msgstr ""
+msgstr "Kỳ tiếp theo cần lập hóa đơn"
 
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_line__display_type__line_note
 #: model:ir.model.fields.selection,name:contract.selection__contract_template_line__display_type__line_note
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_line_form_view
 msgid "Note"
-msgstr ""
+msgstr "Ghi chú"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__note_invoicing_mode
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__note_invoicing_mode
 msgid "Note Invoicing Mode"
-msgstr ""
+msgstr "Chế độ ghi chú khi lập hóa đơn"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__note
 msgid "Notes"
-msgstr ""
+msgstr "Ghi chú"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract_line.py:0
 msgid "November"
-msgstr ""
+msgstr "Tháng Mười Một"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "Số hành động"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__recurring_invoicing_offset
@@ -1251,33 +1285,35 @@ msgid ""
 "Number of days to offset the invoice from the period end date (in post-paid "
 "mode) or start date (in pre-paid mode)."
 msgstr ""
+"Số ngày lệch của hóa đơn so với ngày kết thúc kỳ (chế độ trả "
+"sau) hoặc ngày bắt đầu (chế độ trả trước)."
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_has_error_counter
 msgid "Number of errors"
-msgstr ""
+msgstr "Số lỗi"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr ""
+msgstr "Số tin nhắn cần xử lý"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "Số tin nhắn bị lỗi gửi"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract_line.py:0
 msgid "October"
-msgstr ""
+msgstr "Tháng Mười"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_account_bank_statement_line__old_contract_id
 #: model:ir.model.fields,field_description:contract.field_account_move__old_contract_id
 msgid "Old Contract"
-msgstr ""
+msgstr "Hợp đồng cũ"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__date_end
@@ -1286,13 +1322,13 @@ msgstr ""
 #: model:ir.model.fields,help:contract.field_contract_template__date_end
 #: model:ir.model.fields,help:contract.field_contract_template_line__date_end
 msgid "Optional contract termination date (limits recurrence)"
-msgstr ""
+msgstr "Ngày kết thúc hợp đồng tùy chọn (giới hạn việc lặp lại)"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "Other Information"
-msgstr ""
+msgstr "Thông tin khác"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__partner_id
@@ -1300,12 +1336,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract.field_contract_template__partner_id
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__partner_id
 msgid "Partner"
-msgstr ""
+msgstr "Đối tác"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__payment_term_id
 msgid "Payment Terms"
-msgstr ""
+msgstr "Điều khoản thanh toán"
 
 #. module: contract
 #. odoo-python
@@ -1313,11 +1349,12 @@ msgstr ""
 msgid ""
 "Please define a %(contract_type)s journal for the company '%(company)s'."
 msgstr ""
+"Vui lòng định nghĩa sổ nhật ký %(contract_type)s cho công ty '%(company)s'."
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__access_url
 msgid "Portal Access URL"
-msgstr ""
+msgstr "URL truy cập cổng thông tin"
 
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_contract__recurring_invoicing_type__post-paid
@@ -1326,7 +1363,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_invoicing_type__post-paid
 #: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_invoicing_type__post-paid
 msgid "Post-paid"
-msgstr ""
+msgstr "Trả sau"
 
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_contract__recurring_invoicing_type__pre-paid
@@ -1335,49 +1372,49 @@ msgstr ""
 #: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_invoicing_type__pre-paid
 #: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_invoicing_type__pre-paid
 msgid "Pre-paid"
-msgstr ""
+msgstr "Trả trước"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Preview"
-msgstr ""
+msgstr "Xem trước"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "Price unit"
-msgstr ""
+msgstr "Đơn giá"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__pricelist_id
 #: model:ir.model.fields,field_description:contract.field_contract_template__pricelist_id
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_search_view
 msgid "Pricelist"
-msgstr ""
+msgstr "Bảng giá"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__product_id
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__product_id
 msgid "Product"
-msgstr ""
+msgstr "Sản phẩm"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_res_partner__purchase_contract_count
 #: model:ir.model.fields,field_description:contract.field_res_users__purchase_contract_count
 #: model_terms:ir.ui.view,arch_db:contract.view_partner_form
 msgid "Purchase Contracts"
-msgstr ""
+msgstr "Hợp đồng mua"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Put some note here..."
-msgstr ""
+msgstr "Nhập ghi chú tại đây..."
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__quantity
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__quantity
 #: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "Quantity"
-msgstr ""
+msgstr "Số lượng"
 
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_contract__recurring_rule_type__quarterly
@@ -1386,12 +1423,12 @@ msgstr ""
 #: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_rule_type__quarterly
 #: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_rule_type__quarterly
 msgid "Quarter(s)"
-msgstr ""
+msgstr "Quý"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__rating_ids
 msgid "Ratings"
-msgstr ""
+msgstr "Đánh giá"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__recurring_rule_type
@@ -1402,29 +1439,29 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_line_form_view
 #: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "Recurrence"
-msgstr ""
+msgstr "Chu kỳ lặp"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__line_recurrence
 #: model:ir.model.fields,field_description:contract.field_contract_template__line_recurrence
 msgid "Recurrence at line level?"
-msgstr ""
+msgstr "Lặp theo từng hạng mục?"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Recurring Invoices"
-msgstr ""
+msgstr "Hóa đơn định kỳ"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__is_recurring_note
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__is_recurring_note
 msgid "Recurring Note"
-msgstr ""
+msgstr "Ghi chú định kỳ"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Recurring Type"
-msgstr ""
+msgstr "Loại định kỳ"
 
 #. module: contract
 #. odoo-python
@@ -1432,36 +1469,36 @@ msgstr ""
 #: model:ir.model.fields,field_description:contract.field_contract_contract__code
 #: model_terms:ir.ui.view,arch_db:contract.portal_my_contracts
 msgid "Reference"
-msgstr ""
+msgstr "Tham chiếu"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__user_id
 msgid "Responsible"
-msgstr ""
+msgstr "Người phụ trách"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__activity_user_id
 msgid "Responsible User"
-msgstr ""
+msgstr "Người dùng phụ trách"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_res_partner__sale_contract_count
 #: model:ir.model.fields,field_description:contract.field_res_users__sale_contract_count
 #: model_terms:ir.ui.view,arch_db:contract.view_partner_form
 msgid "Sale Contracts"
-msgstr ""
+msgstr "Hợp đồng bán"
 
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_line__display_type__line_section
 #: model:ir.model.fields.selection,name:contract.selection__contract_template_line__display_type__line_section
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_line_form_view
 msgid "Section"
-msgstr ""
+msgstr "Mục"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__access_token
 msgid "Security Token"
-msgstr ""
+msgstr "Mã bảo mật"
 
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_contract__recurring_rule_type__semesterly
@@ -1470,45 +1507,45 @@ msgstr ""
 #: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_rule_type__semesterly
 #: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_rule_type__semesterly
 msgid "Semester(s)"
-msgstr ""
+msgstr "Học kỳ"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Send by Email"
-msgstr ""
+msgstr "Gửi qua email"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_modification__sent
 msgid "Sent"
-msgstr ""
+msgstr "Đã gửi"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract_line.py:0
 msgid "September"
-msgstr ""
+msgstr "Tháng Chín"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__sequence
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__sequence
 msgid "Sequence"
-msgstr ""
+msgstr "Thứ tự"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.view_partner_form
 msgid "Show the purchase contracts for this partner"
-msgstr ""
+msgstr "Hiển thị các hợp đồng mua cho đối tác này"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.view_partner_form
 msgid "Show the sale contracts for this partner"
-msgstr ""
+msgstr "Hiển thị các hợp đồng bán cho đối tác này"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__specific_price
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__specific_price
 msgid "Specific Price"
-msgstr ""
+msgstr "Giá cụ thể"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__recurring_invoicing_type
@@ -1519,7 +1556,7 @@ msgstr ""
 msgid ""
 "Specify if the invoice must be generated at the beginning (pre-paid) or end "
 "(post-paid) of the period."
-msgstr ""
+msgstr "Xác định hóa đơn được tạo vào đầu kỳ (trả trước) hay cuối kỳ (trả sau)."
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__recurring_rule_type
@@ -1528,7 +1565,7 @@ msgstr ""
 #: model:ir.model.fields,help:contract.field_contract_template__recurring_rule_type
 #: model:ir.model.fields,help:contract.field_contract_template_line__recurring_rule_type
 msgid "Specify interval for automatic invoice generation."
-msgstr ""
+msgstr "Xác định khoảng thời gian để tự động tạo hóa đơn."
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__activity_state
@@ -1538,13 +1575,17 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
+"Trạng thái dựa trên hoạt động\n"
+"Quá hạn: Đã quá ngày đến hạn\n"
+"Hôm nay: Ngày hoạt động là hôm nay\n"
+"Dự kiến: Hoạt động trong tương lai."
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__price_subtotal
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__price_subtotal
 #: model_terms:ir.ui.view,arch_db:contract.portal_contract_page
 msgid "Sub Total"
-msgstr ""
+msgstr "Tạm tính"
 
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_contract__contract_type__purchase
@@ -1552,66 +1593,66 @@ msgstr ""
 #: model:ir.model.fields.selection,name:contract.selection__contract_template__contract_type__purchase
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_supplier_form_view
 msgid "Supplier"
-msgstr ""
+msgstr "Nhà cung cấp"
 
 #. module: contract
 #: model:ir.actions.act_window,name:contract.action_supplier_contract_lines
 msgid "Supplier Contract Lines"
-msgstr ""
+msgstr "Hạng mục hợp đồng nhà cung cấp"
 
 #. module: contract
 #: model:ir.ui.menu,name:contract.menu_supplier_contract_line_report
 msgid "Supplier Contract lines"
-msgstr ""
+msgstr "Các hạng mục hợp đồng nhà cung cấp"
 
 #. module: contract
 #: model:ir.actions.act_window,name:contract.action_supplier_contract
 #: model:ir.ui.menu,name:contract.menu_contract_contract_supplier
 msgid "Supplier Contracts"
-msgstr ""
+msgstr "Hợp đồng nhà cung cấp"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__tag_ids
 msgid "Tags"
-msgstr ""
+msgstr "Thẻ"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_line__display_type
 #: model:ir.model.fields,help:contract.field_contract_template_line__display_type
 msgid "Technical field for UX purposes."
-msgstr ""
+msgstr "Trường kỹ thuật phục vụ mục đích trải nghiệm người dùng."
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
+msgstr "Loại hoạt động cảnh báo trên bản ghi."
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__price_unit
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__price_unit
 msgid "Unit Price"
-msgstr ""
+msgstr "Đơn giá"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__uom_id
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__uom_id
 msgid "Unit of Measure"
-msgstr ""
+msgstr "Đơn vị đo lường"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.report_contract_document
 msgid "VAT:"
-msgstr ""
+msgstr "Thuế GTGT:"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "Tin nhắn website"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "Lịch sử trao đổi trên website"
 
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_contract__recurring_rule_type__weekly
@@ -1620,30 +1661,30 @@ msgstr ""
 #: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_rule_type__weekly
 #: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_rule_type__weekly
 msgid "Week(s)"
-msgstr ""
+msgstr "Tuần"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_line__note_invoicing_mode
 #: model:ir.model.fields,help:contract.field_contract_template_line__note_invoicing_mode
 msgid "When to invoice this note line relative to others."
-msgstr ""
+msgstr "Thời điểm lập hóa đơn cho hạng mục ghi chú này so với các hạng mục khác."
 
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_line__note_invoicing_mode__with_next_line
 #: model:ir.model.fields.selection,name:contract.selection__contract_template_line__note_invoicing_mode__with_next_line
 msgid "With next line"
-msgstr ""
+msgstr "Cùng hạng mục kế tiếp"
 
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_line__note_invoicing_mode__with_previous_line
 #: model:ir.model.fields.selection,name:contract.selection__contract_template_line__note_invoicing_mode__with_previous_line
 msgid "With previous line"
-msgstr ""
+msgstr "Cùng hạng mục trước đó"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.view_res_partner_filter
 msgid "With running contracts"
-msgstr ""
+msgstr "Với các hợp đồng đang hiệu lực"
 
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_contract__recurring_rule_type__yearly
@@ -1652,7 +1693,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_rule_type__yearly
 #: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_rule_type__yearly
 msgid "Year(s)"
-msgstr ""
+msgstr "Năm"
 
 #. module: contract
 #. odoo-python
@@ -1661,6 +1702,8 @@ msgid ""
 "You can't have a date of next invoice anterior to the start of the contract "
 "line '%s'"
 msgstr ""
+"Không thể đặt ngày hóa đơn tiếp theo sớm hơn ngày bắt đầu của "
+"hạng mục hợp đồng '%s'"
 
 #. module: contract
 #. odoo-python
@@ -1669,6 +1712,8 @@ msgid ""
 "You can't have the end date before the date of last invoice for the contract "
 "line '%s'"
 msgstr ""
+"Không thể đặt ngày kết thúc trước ngày lập hóa đơn gần nhất của "
+"hạng mục hợp đồng '%s'"
 
 #. module: contract
 #. odoo-python
@@ -1677,6 +1722,8 @@ msgid ""
 "You can't have the next invoice date before the date of last invoice for the "
 "contract line '%s'"
 msgstr ""
+"Không thể đặt ngày hóa đơn tiếp theo trước ngày lập hóa đơn gần nhất của "
+"hạng mục hợp đồng '%s'"
 
 #. module: contract
 #. odoo-python
@@ -1685,29 +1732,31 @@ msgid ""
 "You can't have the start date after the date of last invoice for the "
 "contract line '%s'"
 msgstr ""
+"Không thể đặt ngày bắt đầu sau ngày lập hóa đơn gần nhất của "
+"hạng mục hợp đồng '%s'"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract_line.py:0
 msgid "You must supply a date of next invoice for contract line '%s'"
-msgstr ""
+msgstr "Bạn phải cung cấp ngày hóa đơn tiếp theo cho hạng mục hợp đồng '%s'"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract.py:0
 msgid "by contract"
-msgstr ""
+msgstr "theo hợp đồng"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "e.g. Contract XYZ"
-msgstr ""
+msgstr "ví dụ: Hợp đồng XYZ"
 
 #. module: contract
 #: model:mail.template,subject:contract.email_contract_template
 msgid "{{ object.company_id.name }} Contract (Ref {{ object.name or 'n/a' }})"
-msgstr ""
+msgstr "{{ object.company_id.name }} Hợp đồng (Tham chiếu {{ object.name or 'n/a' }})"
 
 #. module: contract
 #: model:mail.template,subject:contract.mail_template_contract_modification
@@ -1715,3 +1764,5 @@ msgid ""
 "{{ object.company_id.name }} Contract (Ref {{ object.name or 'n/a' }}) - "
 "Modifications"
 msgstr ""
+"{{ object.company_id.name }} Hợp đồng (Tham chiếu {{ object.name or 'n/a' }}) - "
+"Điều chỉnh"

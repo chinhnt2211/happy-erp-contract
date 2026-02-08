@@ -11,7 +11,7 @@ from freezegun import freeze_time
 
 from odoo import Command, fields
 from odoo.exceptions import ValidationError
-from odoo.tests import Form
+from odoo.tests import Form, new_test_user
 
 from odoo.addons.base.tests.common import BaseCommon
 
@@ -354,8 +354,8 @@ class TestContract(TestContractBase):
     def test_contract_invoice_salesperson(self):
         self.acct_line.recurring_next_date = "2018-02-23"
         self.acct_line.recurring_rule_type = "daily"
-        new_salesperson = self.env["res.users"].create(
-            {"name": "Some Salesperson", "login": "salesperson_test"}
+        new_salesperson = new_test_user(
+            self.env, login="salesperson_test", name="Some Salesperson"
         )
         self.contract.user_id = new_salesperson
         self.contract._recurring_create_invoice()
@@ -1392,17 +1392,12 @@ class TestContract(TestContractBase):
     def test_multicompany_partner_edited(self):
         """Editing a partner with contracts in several companies works."""
         company2 = self.env["res.company"].create({"name": "Company 2"})
-        unprivileged_user = self.env["res.users"].create(
-            {
-                "name": "unprivileged test user",
-                "login": "test",
-                "company_id": company2.id,
-                "company_ids": [(4, company2.id, False)],
-                "group_ids": [
-                    (4, self.env.ref("base.group_user").id),
-                    (4, self.env.ref("base.group_partner_manager").id),
-                ],
-            }
+        unprivileged_user = new_test_user(
+            self.env,
+            login="test",
+            groups="base.group_user,base.group_partner_manager",
+            company_id=company2.id,
+            name="unprivileged test user",
         )
         parent_partner = self.env["res.partner"].create(
             {"name": "parent partner", "is_company": True}

@@ -93,9 +93,9 @@ class ContractLine(models.Model):
                 raise ValidationError(
                     self.env._(
                         "You can't have the end date before the date of last "
-                        "invoice for the contract line '%(name)s'",
-                        name=rec.name,
+                        "invoice for the contract line '%s'"
                     )
+                    % rec.name
                 )
             if not rec.contract_id.line_recurrence:
                 continue
